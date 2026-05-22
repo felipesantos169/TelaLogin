@@ -1,0 +1,19 @@
+.form-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgb(11, 11, 248);
+    width: 500px;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+.form {
+    margin-bottom: 5px;
+    color: lightblue;
+}
+.errado {
+    border: 2px solid red;
+}
+.correto {
+    border: 2px solid greenyellow;
+}
