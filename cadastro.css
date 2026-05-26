@@ -10,6 +10,15 @@
 .form {
     margin: 20px;
 }
+input {
+    margin-bottom: 10px;
+}
+button {
+    display: block;
+    margin: 0 auto;
+    background: black;
+    color: white;
+}
 .texto-login {
     margin-bottom: 20px;
     color: lightblue;
@@ -20,4 +29,3 @@
 .correto {
     border: 2px solid greenyellow;
 }
-
