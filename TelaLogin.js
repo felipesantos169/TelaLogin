@@ -11,31 +11,21 @@ botao.addEventListener('click', e => {
     e.preventDefault()
     const user = nome.value
     const password = senha.value
-
-    validarNomeUser(user)
-    validarSenhaUser(password)
+    validarUser(user, password)
 })
-function validarNomeUser(user) {
-    if(user === userFixo){
+function validarUser(user, password) {
+    if(user === userFixo && password === senhaFixa){
         nome.classList.remove('errado')
         nome.classList.add('correto')
-        return true;
-    }
-    else {
-        nome.classList.remove('correto')
-        nome.classList.add('errado')
-        alert('Erro! Campo (Nome) errado!')
-    }
-}
-function validarSenhaUser(password) {
-    if(password === senhaFixa){
         senha.classList.remove('errado')
         senha.classList.add('correto')
         return true;
     }
     else {
+        nome.classList.remove('correto')
+        nome.classList.add('errado')
         senha.classList.remove('correto')
         senha.classList.add('errado')
-        alert('Erro! Campo (Senha) errado!')
+        alert('Erro! Usuário ou senha errados')
     }
 }
